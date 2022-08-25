@@ -11,7 +11,8 @@ import UnderConstruction from "./components/UnderConstruction/index";
 function App() {
   const location = useLocation();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
+  const [searchTerm, setSearchTerm] = useState("");
+  const [movies, setMovies] = useState([]);
   return (
     <>
       {location.pathname !== "/" && location.pathname !== "/under" && (
@@ -19,10 +20,19 @@ function App() {
       )}
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="home" element={<Home />} />
+        <Route
+          path="home"
+          element={
+            <Home
+            />
+          }
+        />
         <Route path="home" element={<Footer />} />
         <Route path="under" element={<UnderConstruction />} />
-        <Route path="category/:id/:slug" element={<ContentCategory />} />
+        <Route
+          path="category/:id/:slug"
+          element={<ContentCategory />}
+        />
         <Route path="movie/:id" element={<ContentDetail />} />
       </Routes>
     </>

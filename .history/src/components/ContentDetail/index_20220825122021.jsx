@@ -21,6 +21,10 @@ const ContentDetail = () => {
     fetchData();
   }, [fetchURL, setDetails]);
 
+  const handleClick = () => {
+    console.log(details);
+  };
+
   let srcimg = "https://image.tmdb.org/t/p/original/";
 
   return (

@@ -54,7 +54,7 @@ const ContentCategory = () => {
                   details about this movie, click the button below and get the
                   latest news, trailers and more about it!
                 </p>
-                <button className="categoryButton" onClick={() => navigate(`/movie/${mov.id}`)}>View</button>
+                <button className="category-button" onClick={() => navigate(`/movie/${mov.id}`)}>View</button>
               </div>
             </motion.li>
           );

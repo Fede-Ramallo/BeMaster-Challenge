@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import "./ContentDetail.css";
 import axios from "../../utils/axios";
 import { motion } from "framer-motion";
+import { Details } from "@mui/icons-material";
 
 const ContentDetail = () => {
   const { id } = useParams();
@@ -20,6 +21,10 @@ const ContentDetail = () => {
 
     fetchData();
   }, [fetchURL, setDetails]);
+
+  const handleClick = () => {
+    console.log(details);
+  };
 
   let srcimg = "https://image.tmdb.org/t/p/original/";
 

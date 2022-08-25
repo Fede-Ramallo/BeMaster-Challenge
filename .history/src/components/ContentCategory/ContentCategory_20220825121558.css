@@ -27,7 +27,7 @@
   align-content: center;
 }
 
-.categoryMovies {
+.category-movies {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -41,11 +41,11 @@
   list-style: none;
 }
 
-.categoryMovies > a {
+.Category-movies > a {
     text-decoration: none;
 }
 
-.categoryMovieTitle {
+.Category-movie-title {
   color: white;
   text-transform: uppercase;
   text-align: center;
@@ -56,12 +56,12 @@
   width: 100%;
 }
 
-.categoryImage {
+.Category-image {
   width: 100%;
   height: auto;
 }
 
-.categoryOverview {
+.Category-overview {
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
@@ -69,7 +69,7 @@
   text-align: center;
 }
 
-.categoryButton {
+.Category-button {
   padding: 0.8em 1.7em;
   background-color: transparent;
   border-radius: 0.3em;
@@ -86,8 +86,8 @@
   z-index: 1;
 }
 
-.categoryButton::before,
-.categoryButton::after {
+.Category-button::before,
+.Category-button::after {
   content: "";
   display: block;
   width: 50px;
@@ -100,26 +100,26 @@
   transition: 1s ease;
 }
 
-.categoryButton::before {
+.Category-button::before {
   top: -1em;
   left: -1em;
 }
 
-.categoryButton::after {
+.Category-button::after {
   left: calc(100% + 1em);
   top: calc(100% + 1em);
 }
 
-.categoryButton:hover::before,
-.categoryButton:hover::after {
+.Category-button:hover::before,
+.Category-button:hover::after {
   height: 410px;
   width: 410px;
 }
 
-.categoryButton:hover {
+.Category-button:hover {
   color: rgb(10, 25, 30);
 }
 
-.categoryButton:active {
+.Category-button:active {
   filter: brightness(0.8);
 }

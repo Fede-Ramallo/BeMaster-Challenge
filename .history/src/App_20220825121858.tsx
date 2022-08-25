@@ -11,7 +11,8 @@ import UnderConstruction from "./components/UnderConstruction/index";
 function App() {
   const location = useLocation();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
+  const [searchTerm, setSearchTerm] = useState("");
+  const [movies, setMovies] = useState([]);
   return (
     <>
       {location.pathname !== "/" && location.pathname !== "/under" && (

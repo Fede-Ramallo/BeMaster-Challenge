@@ -43,18 +43,18 @@ const ContentCategory = () => {
                 <img
                   src={`${srcimg}${mov.backdrop_path}`}
                   alt={mov.original_title}
-                  className="categoryImage"
+                  className="category-image"
                   key={mov.id}
                 />
-                <h2 className="categoryMovieTitle">{mov.title}</h2>
+                <h2 className="category-movie-title">{mov.title}</h2>
               </Link>
-              <div className="categoryOverview">
+              <div className="category-overview">
                 <p>
                   This is a movie provided by TMDB, if you want to know more
                   details about this movie, click the button below and get the
                   latest news, trailers and more about it!
                 </p>
-                <button className="categoryButton" onClick={() => navigate(`/movie/${mov.id}`)}>View</button>
+                <button className="category-button" onClick={() => navigate(`/movie/${mov.id}`)}>View</button>
               </div>
             </motion.li>
           );
