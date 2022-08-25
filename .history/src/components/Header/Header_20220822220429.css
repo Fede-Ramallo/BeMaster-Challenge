@@ -1,0 +1,11 @@
+.Header {
+    width: 100%;
+    height: auto;
+}
+
+.Menu-Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}

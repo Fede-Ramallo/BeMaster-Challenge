@@ -1,0 +1,16 @@
+.Header {
+    width: 100%;
+    height: auto;
+}
+
+.Menu-Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.Menu-Container > li {
+    color: #000;
+    font-size: 16px;
+}

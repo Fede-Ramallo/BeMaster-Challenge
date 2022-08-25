@@ -1,0 +1,9 @@
+.login{
+    width: 100%;
+    height: auto;
+}
+
+.logo-login > img{
+    width: 200px;
+    height: 100px;
+}

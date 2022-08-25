@@ -1,0 +1,12 @@
+.Category {
+    width: 100%;
+    height: 100vh;
+}
+
+.Category-Container{
+    background-color: #233B54;
+}
+
+.Category-Container > button{
+    margin-top: 300px;
+}
