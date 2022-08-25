@@ -24,10 +24,7 @@ const Home = () => {
           setMovieTitle={setMovieTitle}
           setMovieOverview={setMovieOverview}
           setMovieImg={setMovieImg}
-          showModal={showModal}
-          movieTitle={movieTitle}
-          movieOverview={movieOverview}
-          movieImg={movieImg}
+          showModal={}
           category="35"
         />
         <List

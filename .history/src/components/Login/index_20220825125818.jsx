@@ -12,12 +12,11 @@ import { pink } from "@mui/material/colors";
 
 const Login = () => {
   const [nombre, guardarNombre] = useState("");
-  const [email, guardarEmail] = useState({ error: false, value: "" });
+  const [email, guardarEmail] = useState({ error: false, value: ""});
   const [password, guardarPassword] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const re =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   const navigate = useNavigate();
 
@@ -30,9 +29,9 @@ const Login = () => {
 
     guardarEmail({
       value,
-      error: !isValidEmail,
-    });
-  };
+      error: !isValidEmail
+    })
+  }
 
   const onSubmitHandler = (e) => {
     e.preventDefault();

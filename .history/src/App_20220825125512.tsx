@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       {location.pathname !== "/" && location.pathname !== "/under" && (
-        <Header />
+        <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
       )}
       <Routes>
         <Route path="/" element={<Login />} />
