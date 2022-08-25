@@ -1,0 +1,34 @@
+.Details{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 3vw 0px;
+    background-color: #233b54;
+    display: flex;
+}
+
+.Details > button {
+    padding: 5vw 0px;
+}
+
+.Details > img {
+    width: 30%;
+    height: 100vh;
+}
+
+.Details-Text{
+    
+}
+
+.Details-Text > h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+}
+
+.Details-Text > h2 > span{
+    text-align: center;
+    padding: 0 5rem;
+    font-size: 30px;
+}

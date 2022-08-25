@@ -1,0 +1,42 @@
+.Category {
+  width: 100%;
+  height: auto;
+  padding: 3vw 0px;
+  background-color: #233b54;
+}
+
+.Category-Container {
+  grid-gap: 50px;
+  display: grid;
+  grid-auto-rows: 430px;
+  grid-template-columns: repeat(auto-fit,minmax(0,500px));
+  padding: 10px;
+  justify-content: space-evenly;
+  justify-items: stretch;
+  align-content: center;
+}
+
+.Category-movies {
+  background-color: #000;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  width: 260px;
+  transition: all 450ms;
+}
+
+.Category-movie-title {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.Category-image{
+    width: 100%;
+    height: auto;
+}

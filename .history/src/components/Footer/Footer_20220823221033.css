@@ -1,0 +1,83 @@
+.containerContact{
+    position: relative;
+    padding: 2rem clamp(1rem, 7vw, 200px);
+    z-index: 2;
+    background-color: #201C35;
+  }
+  
+  .contactWrapTotal{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    gap: 0px 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contactWrap{
+    max-width: 200px;
+  }
+  
+  .contactLink{
+    color: white;
+    font-size: 1.4rem;
+    line-height: 2rem ;
+    font-family: Montserrat;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+  }
+  
+  .contactLink:hover{
+    opacity: 1;
+  }
+  
+  .twenty{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: #b7b4b9;
+  }
+  
+  .contactHeading{
+    display: block;
+    font-weight: bold;
+    color: rgb(199, 199, 199);
+    margin-bottom: 0.5rem;
+  }
+  
+  .linksContact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 0.5rem;
+  }
+  
+  .socialMediaContact{
+    font-size: 2rem;
+  
+  }
+  
+  .socialMediaContact > a{
+    padding: 2rem 1rem 2rem 0px;
+    color: #A20025;
+  }
+  
+  .socialMediaContact > a:hover{
+    padding: 2rem 1rem 2rem 0px;
+    color: #E51A4C;
+    filter: opacity(0.8);
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .linksContactChild{
+    color: #A20025;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .linksContactChild:hover{
+    text-decoration: none;
+    color: #75001b;
+  }

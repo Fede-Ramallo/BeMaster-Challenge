@@ -1,0 +1,9 @@
+.mainView{
+    background-color: #160C1B;
+    overflow-x: hidden;
+}
+
+.Rows{
+    padding: 0 0 50px;
+    z-index: 0;
+}

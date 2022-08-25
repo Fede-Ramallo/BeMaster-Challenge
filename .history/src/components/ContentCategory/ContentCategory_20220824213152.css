@@ -1,0 +1,115 @@
+.Category {
+  width: 100%;
+  height: auto;
+  padding: 3vw 0px;
+  background-color: #233b54;
+}
+
+.Category > h1 {
+    text-transform: uppercase;
+    
+}
+
+.Category-Container {
+  grid-gap: 50px;
+  display: grid;
+  grid-auto-rows: 500px;
+  grid-template-columns: repeat(auto-fit, minmax(0, 500px));
+  padding: 10px;
+  justify-content: space-evenly;
+  justify-items: stretch;
+  align-content: center;
+}
+
+.Category-movies {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  max-width: min(80vw, 25em);
+  transition: all 450ms;
+  list-style: none;
+}
+
+.Category-movie-title {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.Category-image {
+  width: 100%;
+  height: auto;
+}
+
+.Category-overview {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.Category-button {
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: 0.3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: #00a97f;
+  z-index: 1;
+}
+
+.Category-button::before,
+.Category-button::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #00a97f;
+  transition: 1s ease;
+}
+
+.Category-button::before {
+  top: -1em;
+  left: -1em;
+}
+
+.Category-button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+
+.Category-button:hover::before,
+.Category-button:hover::after {
+  height: 410px;
+  width: 410px;
+}
+
+.Category-button:hover {
+  color: rgb(10, 25, 30);
+}
+
+.Category-button:active {
+  filter: brightness(0.8);
+}
