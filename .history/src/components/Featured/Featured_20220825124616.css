@@ -9,6 +9,26 @@
     object-fit: cover;
 }
 
+.featuredCategory{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.featuredCategory > select {
+    cursor: pointer;
+    background-color: #0b0b0b;
+    border: 1px solid white;
+    color: white;
+    margin-left: 20px;
+    padding: 5px;
+  }
+
 .infoFeatured{
     width: 39%;
     position: absolute;
