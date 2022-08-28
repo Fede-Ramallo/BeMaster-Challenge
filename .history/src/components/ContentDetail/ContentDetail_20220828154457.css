@@ -1,0 +1,141 @@
+.details {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0;
+  padding-top: 70px;
+  background-color: #233b54;
+  display: flex;
+}
+
+.detailsImage {
+  width: 100%;
+  height: auto;
+  min-width: 760px;
+}
+
+.detailsImageContainer > img {
+  position: relative;
+  width: 93%;
+  height: 90%;
+  object-fit: cover;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.detailsImageContainer {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  top: 15%;
+  left: 10%;
+  width: 420px;
+  height: 550px;
+  border-radius: 5px;
+}
+
+.detailsImageContainer:after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * 3px);
+  left: calc(-1 * 3px);
+  height: calc(100% + 3px * 2);
+  width: calc(100% + 3px * 2);
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  border-radius: calc(2 * 3px);
+  z-index: 1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+.detailsText {
+  text-align: center;
+  padding: 0 5rem;
+}
+
+.detailsText > h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 36px;
+  color: #fff;
+  font-family: "Prompt", sans-serif;
+}
+
+.detailsText > h2 > span {
+  font-size: 28px;
+  color: #938172;
+  opacity: 0.9;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.detailsText > h3 {
+  min-width: 300px;
+  font-size: 20px;
+  opacity: 0.75;
+  color: #fff;
+  font-family: "Prompt", sans-serif;
+}
+
+.detailsText > p {
+  font-size: 24px;
+  text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Prompt", sans-serif;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 36em){
+  .details{
+    align-items: center;
+    flex-direction: column;
+  }
+  .detailsImage {
+    min-width: 0px;
+    min-height: 550px;
+  }
+  .detailsImageContainer{
+    max-width: 350px;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .detailsImageContainer > img {
+    padding: 35px 15px;
+    border-radius: 45px;
+  }
+  .detailsText{
+    padding: unset;
+    width: 75%;
+  }
+}
+
+@media (min-width: 90.063em) {
+  .details {
+    height: calc(100vh - 70px);
+  }
+}

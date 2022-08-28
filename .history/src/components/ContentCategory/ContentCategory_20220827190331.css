@@ -1,0 +1,133 @@
+.category {
+  width: 100%;
+  height: auto;
+  padding: 3vw 0px;
+  background-color: #233b54;
+}
+
+.category > h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 2px 1px #a8bcbd, 
+    -1px 3px 1px #a8bcbd, 
+    -2px 5px 1px #a8bcbd;
+}
+
+.categoryContainer {
+  grid-gap: 50px;
+  display: grid;
+  grid-auto-rows: 500px;
+  grid-template-columns: repeat(auto-fit, minmax(0, 400px));
+  padding: 10px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: center;
+}
+
+.categoryMovies {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  max-width: min(80vw, 25em);
+  transition: all 450ms;
+  list-style: none;
+}
+
+.categoryMovies > a {
+    text-decoration: none;
+}
+
+.categoryMovieTitle {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.categoryImage {
+  width: 100%;
+  height: auto;
+}
+
+.categoryOverview {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.categoryButton {
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: 0.3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: #00a97f;
+  z-index: 1;
+}
+
+.categoryButton::before,
+.categoryButton::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #00a97f;
+  transition: 1s ease;
+}
+
+.categoryButton::before {
+  top: -1em;
+  left: -1em;
+}
+
+.categoryButton::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+
+.categoryButton:hover::before,
+.categoryButton:hover::after {
+  height: 410px;
+  width: 410px;
+}
+
+.categoryButton:hover {
+  color: rgb(10, 25, 30);
+}
+
+.categoryButton:active {
+  filter: brightness(0.8);
+}
+
+@media (max-width: 36em) {
+  .category > h1{
+    font-size: 24px;
+    width: 90%;
+    margin: 40px auto;
+  }
+}
